@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+.nav1{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border-bottom: 2px dotted #D9151D;
+}
+
+.nav1:after{
+    content: '';
+    clear: both;
+    display:table;
+}
+.nav1 .logo{
+    float: left;
+    color: #D9151D;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 130px;
+    padding-top: 2px;
+}
+.nav1 ul{
+    float: right;
+    list-style:none;
+    margin-right: 40px;
+    position: relative;
+    padding-top: 19px;
+}
+.nav1 ul li{
+    display: inline-block;
+    background: #ffffff;
+    z-index:3;
+}
+.nav1 ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    border-left: 1px dotted black;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 6px 12px;
+}
+.nav1 ul li a:hover{   /*Tuş takımının hover'ı*/
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+.nav1 ul ul{
+    position: absolute;
+    top:90px;
+    display: none;
+    display: none;
+    transition: top .3s ;
+    border-top: 3px solid #D9151D;
+}
+.nav1 ul ul ul{
+    border-top:none;
+}
+.nav1 ul li:hover> ul{
+    top:70px;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+.nav1 ul ul li{
+    position: relative;
+    margin:0px;
+    width:250px;
+    float:none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.nav1 ul ul li a{
+    line-height: 35px;
+    display: block;
+}
+
+.nav1 ul ul li a:hover{
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    box-shadow:none;
+    display: block;
+}
+.show,.icon, input{
+    display: none;
+}
+@media all and (max-width:1243px){
+    .nav1 ul{
+        margin-right: 0px;
+        float:left;
+        
+    }
+    .nav1 .logo{
+        padding-left: 30px ;
+        width:100%;
+
+    }
+    .nav1 ul li, .nav1 ul ul li{
+        display: block;
+        width: 100%;
+    }
+    .nav1 ul li:hover{
+        display: block;
+    }
+    .nav1 ul ul{
+        top:70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        
+    }
+    .nav1 ul ul li{
+        position: static;
+        border-bottom: 0px;
+        background: rgb(236, 236, 236);
+    }
+    .nav1 ul ul a{
+        padding-left:80px;
+    }
+    .show{
+        display: block;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+        
+    }
+    .show:hover{
+        color: #ffffff;
+        background: black;
+    }
+    .icon{
+        display: block;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        right: 40px;
+        top:30px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav1 ul li a:hover{
+        box-shadow:none;
+        transition-duration: 0.4s;
+
+    }
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+}
+/*--------------------------------------------PORTFOLİO-----------------------------------------------*/
+
