@@ -1,0 +1,982 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+.nav2{
+    background: black;
+    color: white;
+}
+.nav2 a{
+    color: white;
+    text-decoration: none;
+    padding-right:10px;
+}
+.nav2 a:hover{
+    color: #D9151D;
+    text-decoration:none;
+}
+.text-white{
+    width:2%;
+}
+.col1{
+    margin-top: 5px;
+}
+.col1 i{
+    margin-right: 10px;
+}
+
+#cimg{
+    width: 100% ;
+    height: 80%;
+}
+/*----------------------button-group--------------------------------------------*/
+@media  screen and (min-width:1366px) {
+    #button-group{
+        width: 80%;
+        height: 150px;
+        left:145px;
+        top: -80px;
+        z-index: 15;
+        font-size: 20px;
+    }
+    #icon{
+        font-size: 35px;
+    }
+    #button1{
+        width: 25%;
+        background-color: white;
+        color: #000;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    
+    #button1:hover{
+        background-color:#D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #button2{
+        width: 25%;
+        background-color: #D9151D;
+        color:white;
+    }
+    #button2:hover{
+        background-color: white;
+        color: #D9151D;
+        transition-duration: 0.4s;
+    }
+    #button3{
+        width: 25%;
+        background-color: white;
+        color: #000;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    #button3:hover{
+        background-color: #D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #flip-content{
+        width: auto;
+        height: 20%;
+        margin: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 17px;
+        float:center;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 336px;
+        height: 200px;
+        margin:4px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side */
+    .flip-box-front {
+        background-color: rgb(219, 219, 219);
+        color: #D9151D;
+    }
+    
+    /* Style the back side */
+    .flip-box-back {
+        background-color: #000000;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #flip-img{
+        width: 336px;
+        height: 200px;
+    }
+
+}
+
+
+
+/*--------------------------EXPLANATION BOX GROUP-------------------------------*/
+.body8{
+    align-items:center;
+    justify-content:center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius:600px;
+    box-shadow:15px -8px 5px 2px #d9151c;
+    margin-top: 4%;
+    width: 95%;
+}
+
+.about-section1{
+    background: url("images/teknos.jpeg") no-repeat left;
+    background-size: 45%;
+    overflow:hidden;  
+}
+.inner-container1{
+    width: 55%;
+    float:right;
+    background-color: #f8f8f8;
+    padding: 100px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius:600px;
+}
+.inner-container1 h1{
+    margin-bottom: 30px;
+    font-size:30px;
+    font-weight:800;
+}
+.border{
+    height:4px;
+    width:100px;
+    background-color: #D9151D;
+}
+.text{
+    font-size:17px;
+    color: #2e2e2e;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom:40px;
+}
+button{
+    border:none;
+    padding: 8px 15px;
+    background-color: #D9151D;
+    color: white;
+}
+/*----------------------------------------------*/
+.body9{
+    align-items:center;
+    justify-content:center;
+    background-color: #f8f8f8;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius:600px;
+    box-shadow:-24px 10px 5px -1px #d9151c;
+    width: 95%;
+    float: right;
+}
+
+.about-section2{
+    background: url("images/teknol.png") no-repeat right;
+    background-size: 45%;
+    overflow:hidden;  
+}
+.inner-container2{
+    width: 55%;
+    background-color: #f8f8f8;
+    padding: 100px;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius:600px;
+    margin-left: 5%;
+}
+.inner-container2 h1{
+    margin-bottom: 30px;
+    font-size:30px;
+    font-weight:800;
+}
+.text2{
+    font-size:17px;
+    color: #2e2e2e;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom:40px;
+    margin-left: 100px;
+}
+/*----------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    .inner-container1{
+        padding: 90px;
+    }
+    .inner-container2{
+        padding: 90px;
+    }
+    .inner-container2 button{
+        margin-left: 5%;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .about-section1{
+        background-size: 0%;
+        padding: 100px 40px;
+    }
+    .inner-container1{
+        width: 100%;
+    }
+    .about-section2{
+        background-size: 0%;
+        padding: 100px 40px;
+    }
+    .inner-container2{
+        width: 100%;
+    }
+    .inner-container2 button{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-section1{
+        padding:0;
+    }
+    .inner-container1{
+        padding: 60px;
+    }
+    .about-section2{
+        padding:0;
+    }
+    .inner-container2{
+        padding: 60px;
+    }
+    .text{
+        font-size:16px;
+        color: #2e2e2e;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom:40px;
+        padding-left: 250px;
+    }
+    .text2{
+        font-size:16px;
+        color: #2e2e2e;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom:40px;
+        padding-left: 100px;
+    }
+    .inner-container2 button{
+        margin-left: 30%;
+    }
+
+}
+ 
+
+/*-----------------------------------*/
+ /*------------------------------------------SECTION COUNTER----------------------------------------*/
+    
+ .counter-up{ 
+    background:url("images/bg.jpg") no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up .content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .box{
+    width: calc(25% - 30px);
+    border: 1px dashed #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content .box .icon{
+    font-size: 50px;
+    color: #e6e6e6;
+}
+.content .box .counter{
+    font-size: 50px;
+    color: #f2f2f2;
+    font-weight:500;
+    font-family: sans-serif;
+}
+.content .box .textbox{
+    color:#ccc;
+    font-weight: 400;
+}
+@media (max-width:1036px){
+    .counter-up{
+        padding: 50px 50px 0 50px;
+    }
+    .content .box{
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 580px){
+    .content .box{
+       width:100%; 
+    }
+}
+
+@media screen and (max-width: 968px){
+     .nav2 {
+        display: none;
+    }
+    .content .box{
+        background: none;
+    }
+    .content .box .icon{
+        display: none;
+    }
+    .content .box .text{
+        color:#ccc;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+#flip-content{
+    width: auto;
+    height: 20%;
+    margin: 40px;
+    padding-top: 2%;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 17px;
+    float:center;
+    display: block;
+}
+#flip-content {
+    padding-top: 20%;
+    padding-left:8%;
+    padding-right:8%;
+}
+#flip-content h4{
+    padding-top: 20%;
+}
+
+#flip-row{
+    padding-left:10%;
+    padding-right:8%;
+}
+.flip-box {
+    background-color: transparent;
+    display: flex;
+    margin:4px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: rgb(219, 219, 219);
+    color: #D9151D;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: #000000;
+    color: white;
+    transform: rotateY(180deg);
+}
+#flip-img{
+    width: 336px;
+    height: 200px;
+}
+
+#button-flip{
+    display: flex;
+    flex-direction: column;
+    background:#D9151D; 
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1365px){
+    .nav2{
+        display: none;
+    }
+    #button-group{
+        width: 80%;
+        height: 150px;
+        left:80px;
+        top: -75px;
+        z-index: 15;
+        font-size: 20px;
+
+    }
+    #icon{
+        font-size: 40px;
+    }
+    #button1{
+        width: 25%;
+        background-color: white;
+        color: #000;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    #button1:hover{
+        background-color:#D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #button2{
+        width: 25%;
+        background-color: #D9151D;
+        color:white;
+    }
+    #button2:hover{
+        background-color: white;
+        color: #D9151D;
+        transition-duration: 0.4s;
+    }
+    #button3{
+        width: 25%;
+        background-color: white;
+        color: #000;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    #button3:hover{
+        background-color: #D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #flip-row{
+        padding-left:10%;
+        padding-right:10%;
+    }
+    #flip-content{
+        width: auto;
+        height: 20%;
+        margin: 40px;
+        margin-top: 10%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 17px;
+        float:center;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 336px;
+        height: 200px;
+        margin-left:9%;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side */
+    .flip-box-front {
+        background-color: rgb(219, 219, 219);
+        color: #D9151D;
+    }
+    
+    /* Style the back side */
+    .flip-box-back {
+        background-color: #000000;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #flip-img{
+        width: 336px;
+        height: 200px;
+    }
+    #flip-content h4{
+        margin-top:5% ;
+    } 
+
+}
+@media screen and (min-width: 415px) and (max-width: 767px){
+    #button-group{
+        width: 95%;
+        height: 180px;
+        left:10px;
+        top: -75px;
+        z-index: 15;
+        font-size: 20px;
+
+    }
+    #icon{
+        font-size: 40px;
+    }
+    #button1{
+        width: 25%;
+        background-color: white;
+        color: #000;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    #button1:hover{
+        background-color:#D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #button2{
+        width: 25%;
+        background-color: #D9151D;
+        color:white;
+    }
+    #button2:hover{
+        background-color: white;
+        color: #D9151D;
+        transition-duration: 0.4s;
+    }
+    #button3{
+        width: 25%;
+        background-color: white;
+        color: #000;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    #button3:hover{
+        background-color: #D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #flip-content{
+        width: auto;
+        height: 20%;
+        margin: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 17px;
+        float:center;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 336px;
+        height: 200px;
+        margin:4px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side */
+    .flip-box-front {
+        background-color: rgb(219, 219, 219);
+        color: #D9151D;
+    }
+    
+    /* Style the back side */
+    .flip-box-back {
+        background-color: #000000;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #flip-img{
+        width: 336px;
+        height: 200px;
+    }
+    #flip-content h4{
+        margin-top:5% ;
+    } 
+
+    .container {
+        position: relative;
+        padding-top: 70px;
+        max-width:100%; /* Maximum width */
+        margin: 0 auto; /* Center it */
+      }
+      
+      .container .content {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: #d9151c8a; /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 94.5%; /* Full width */
+        padding: 20px; /* Some padding */
+        height: 20%;
+      }
+    
+}
+@media screen and (min-width:320px) and (max-width: 414px){
+    #button-group{
+      display: flex;
+      flex-direction: column;
+    }
+    #icon{
+        font-size: 20px;
+    }
+    #button1{
+        width: 100%;
+        background-color: white;
+        color: #000;
+    }
+
+    #button1:hover{
+        background-color:#D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #button2{
+        width: 100%;
+        background-color: #D9151D;
+        color:white;
+    }
+    #button2:hover{
+        background-color: white;
+        color: #D9151D;
+        transition-duration: 0.4s;
+    }
+    #button3{
+        width: 100%;
+        background-color: white;
+        color: #000;
+    }
+    #button3:hover{
+        background-color: #D9151D;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    #flip-content{
+        width:fit-content;
+        height: 100%;
+        position:relative;
+      
+        font-size: 17px;
+        float:center;
+    }
+    #flip-content h4{
+        margin-top: 20%;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 336px;
+        height: 200px;
+        margin:4px;
+        margin-left:5%;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side */
+    .flip-box-front {
+        background-color: rgb(219, 219, 219);
+        color: #D9151D;
+    }
+    
+    /* Style the back side */
+    .flip-box-back {
+        background-color: #000000;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    #flip-img{
+        width: 336px;
+        height: 200px;
+    }
+    #flip-content h4{
+        margin-top:5% ;
+    } 
+}
+
+/*--------------------------------------------FOOTER-----------------------------------------------*/
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#footermobile{
+    display:none;
+}
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+footer .container-footer .sec.aboutus{
+    width: 40%;
+}
+footer .container-footer  h2{
+    position: relative;
+    color:#fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #D9151D;
+}
+footer p{
+    color:#ede7f6 ;
+}
+.sci{
+    margin-top:20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color:white;
+}
+.sci li a:hover{
+    background: #D9151D;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color: #ede7f6;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover{
+    color: #D9151D;
+}
+.contactsec{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contactsec .info{
+    position: relative;
+}
+.contactsec .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contactsec .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contactsec .info li span{
+    color:white ;
+}
+.contactsec .info li a{
+    color: #ede7f6;
+    text-decoration: none;
+}
+.contactsec .info li a:hover{
+    color: #D9151D;
+}
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #ede7f6;
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container-footer{
+        flex-direction: column;
+    }
+    footer .container-footer .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    #sec-footer-ul{
+        display: none;
+    }
+    #footermobile{
+        display: table;
+    }
+    #footermobile td a{
+        text-decoration: none;
+        font-size:20px ;
+        color: #fff;
+    }
+    #footermobile td a:hover{
+        color: #D9151D;
+    }
+    .sec .info{
+        display: none;
+    }
+    #footermobile td p{
+        text-decoration: none;
+        color: #fff;
+    }
+    footer .container-footer .sec.aboutus, .quickLinks, .contactsec{
+        width: 100%;
+        height: fit-content;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
+}
