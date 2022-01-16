@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+
+}
+.wrapper h1{
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #D9151D;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 20px;
+}
+.content-box a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.content-box a:hover{
+    color: white;
+    text-decoration: none;
+}
+.card{
+    min-height: 220px;
+    width: 300px;
+    padding:30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 15px 25px #516d8ba9;
+}
+.card i{
+    margin:20px;
+    color: #D9151D;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.card:hover i,
+.card:hover p{
+    color:#fff;
+}
+.card:hover h2{
+    font-weight: 600;
+    color: #f2f2f2;
+}
+.card p{
+    color:#6c757d ;
+    text-align: center;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+  rgba(255, 78, 8, 0.61) 0%,
+  rgba(223, 0, 111, 0.678) 100%),
+    url('images/hizmetler/hosting2.jpg');
+    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 78, 8, 0.61) 0%,
+    rgba(223, 0, 111, 0.678) 100%),
+    url('images/hizmetler/bg-web.jpg');
+    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 78, 8, 0.61) 0%,
+    rgba(223, 0, 111, 0.678) 100%),
+    url('images/hizmetler/bg-sms.jpg');
+    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 78, 8, 0.61) 0%,
+    rgba(223, 0, 111, 0.678) 100%),
+    url('images/hizmetler/bg-teknik.png');
+    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 78, 8, 0.61) 0%,
+    rgba(223, 0, 111, 0.678) 100%),
+    url('images/hizmetler/akilliev3.png');
+    background-size: cover;
+}
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 78, 8, 0.61) 0%,
+    rgba(223, 0, 111, 0.678) 100%),
+    url('images/hizmetler/akillisehir.jpg');
+    background-size: cover;
+}
+@media(max-width: 991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width:300px;
+        margin: 10px auto;
+    }
+}
+/*----top image-----*/
+
+.counter-up1{ 
+    background:url("images/bg-hosting-banner.jpg") no-repeat;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up1::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up1 .content1{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content1 .box1{
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content1 .box1 .counter1{
+    font-size: 35px;
+    color: #f2f2f2;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content1 .box1 .counter2{
+    font-size: 18px;
+    color: #dddddd;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content1 .box1 .text{
+    color:#ccc;
+    font-weight: 400;
+}
+
+/*----------top-image-2-----------------------*/
+.counter-up2{ 
+    background:url("images/bg-web-banner.jpg") no-repeat;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up2::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up2 .content2{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content2 .box2{
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content2 .box2 .counter3{
+    font-size: 35px;
+    color: #f2f2f2;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content2 .box2 .counter4{
+    font-size: 18px;
+    color: #dddddd;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content2 .box2 .text{
+    color:#ccc;
+    font-weight: 400;
+}
+/*-------Top-İMAGE-3------*/
+.counter-up3{ 
+    background:url("images/bg-toplusms-banner.jpg") no-repeat;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up3::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up3 .content3{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content3 .box3{
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content3 .box3 .counter9{
+    font-size: 35px;
+    color: #f2f2f2;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content3 .box3 .counter10{
+    font-size: 18px;
+    color: #dddddd;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content3 .box3 .text{
+    color:#ccc;
+    font-weight: 400;
+}
+
+/*-------Top-İMAGE-4------*/
+.counter-up4{ 
+    background:url("images/bg-teknik-banner.jpg") no-repeat;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up4::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up4 .content4{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content4 .box4{
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content4 .box4 .counter11{
+    font-size: 35px;
+    color: #f2f2f2;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content4 .box4 .counter12{
+    font-size: 18px;
+    color: #dddddd;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content4 .box4 .text{
+    color:#ccc;
+    font-weight: 400;
+}
+/*---------top-5--------*/
+.counter-up5{ 
+    background:url("images/hizmetler/smarthome.png") no-repeat;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up5::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up5 .content5{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content5 .box5{
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content5 .box5 .counter13{
+    font-size: 35px;
+    color: #f2f2f2;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content5 .box5 .counter14{
+    font-size: 18px;
+    color: #dddddd;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content5 .box5 .text{
+    color:#ccc;
+    font-weight: 400;
+}
+/*----------------top6-------------------*/
+.counter-up6{ 
+    background:url("images/hizmetler/akillisehirler.jpg") no-repeat;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-up6::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+.counter-up6 .content6{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content6 .box6{
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.content6 .box6 .counter15{
+    font-size: 35px;
+    color: #f2f2f2;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content6 .box6 .counter16{
+    font-size: 18px;
+    color: #dddddd;
+    font-weight:200;
+    font-family: sans-serif;
+}
+.content6 .box6 .text{
+    color:#ccc;
+    font-weight: 400;
+}
+/*----Pricing table-----*/
+@media screen and (min-width: 969px){
+.pricing-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.pricing-card{
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+    transition: .3s linear;
+    border: 1px solid #D9151D;
+}
+.pricing-card-header{
+    background-color: #D9151D;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+.pricing-card:hover{
+    border: 1px solid black;
+    box-shadow: black;
+}
+.pricing-card:hover .pricing-card-header{
+    box-shadow: 0 0 0 26em #D9151D;
+}
+
+.price{
+    font-size: 25px;
+    color: #D9151D;
+    margin: 40px 0;
+    transition: .2s linear;
+}
+
+.price sup, .price span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pricing-card:hover , .pricing-card:hover .price{
+    color: #fff;
+}
+.pricing-card li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #D9151D;
+    color: #D9151D;
+    padding: 16px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+}
+.order-btn:hover{
+    background-color:#D9151D ;
+    color: #fff;
+}
+}
+@media screen and (max-width: 968px){
+    .pricing-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:100%;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        }
+        .pricing-card{
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            margin: 20px 10px;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            color: black;
+            transition: .3s linear;
+            border: 1px solid #D9151D;
+        }
+        .pricing-card-header{
+            background-color: #D9151D;
+            display: inline-block;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 0 0 20px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .4s linear;
+        }
+        .pricing-card:hover{
+            border: 1px solid black;
+            box-shadow: black;
+        }
+        .pricing-card:hover .pricing-card-header{
+            box-shadow: 0 0 0 8em #D9151D;
+        }
+        
+        .price{
+            font-size: 25px;
+            color: #D9151D;
+            margin: 40px 0;
+            transition: .2s linear;
+        }
+        
+        .price sup, .price span{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .pricing-card:hover , .pricing-card:hover .price{
+            color: #fff;
+        }
+        .pricing-card li{
+            font-size: 20px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            
+        }
+        .order-btn{
+            display: inline-block;
+            margin-bottom: 40px;
+            margin-top: 80px;
+            border: 2px solid #D9151D;
+            color: #D9151D;
+            padding: 16px 20px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+        }
+        .order-btn:hover{
+            background-color:#D9151D ;
+            color: #fff;
+        }
+}
+
+/*----------------web-tasarımı-body---------------------*/
+
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+}
+.container1{
+    width: 80%;
+    display: block;
+    margin:auto;
+}
+.content-section{
+    float: left;
+    width: 53%;
+    margin-top: 25px;
+}
+.image-section{
+    float: right;
+    width: 43%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .content5 h5{
+    color: #3d3d3d ;
+}
+.content-section .content5 .button5{
+    margin-top: 20px;
+}
+.content-section .content5 .button5 a{
+    background:#D9151D ;
+    padding:6px 14px;
+    text-decoration: none ;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+ 
+@media screen and (max-width: 1300px){
+    .container1{
+        width: 80%;
+        display: block;
+        margin:auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section2{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section2{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+.content-section2{
+    float: right;
+    width: 55%;
+    margin-top: 40px;
+}
+.content-section2 .content5 .button5 a{
+    background:#D9151D ;
+    padding:6px 14px;
+    text-decoration: none ;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.image-section2{
+    float: left;
+    width: 40%;
+    margin-top:-100px;
+}
+
+.content-section3{
+    float: right;
+    width: 55%;
+}
