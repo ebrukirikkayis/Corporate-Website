@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*----Sehir Analiz Sistemleri----*/
+.container-sehir{
+    width: 70%;
+    height: fit-content;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#colhead{
+    text-align: center;
+    line-height: 100px;
+}
+#colheadsec{
+    text-align: left;
+    line-height: 80px;
+}
+#colheadthr{
+    text-align: left;
+    line-height: 20px;
+}
+
+#span-id{
+    font-size: 30px;
+    text-decoration: overline;
+}
+
+#span-id1{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 17px;
+}
+#span-id2{
+    font-size: 25px;
+}
+#span-id3{
+    font-size: 20px;
+}
+#span-id4{
+    font-size: 17px;
+}
+#colcontent-img{
+    width: 100%;
+}
+#colcontent-img2{
+    width: 50%;
+    margin-left:25%;
+}
+/*-----------------------------------------------*/
+#colheader{
+    text-align: center;
+    line-height: 100px;
+}
+#span-sp{
+    font-size: 30px;
+}
+#span-sp1{
+    font-size: 30px;
+    text-decoration: overline;
+    line-height:100px;
+}
+#span-sp2{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.container-home{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding:2%; 
+}
+.container-yazilimsal{
+    width: 100%;
+    height: fit-content;
+    background: rgb(65, 65, 65);
+    color:rgb(235, 235, 235);
+}
+#donanimsal{
+    color: black;
+}
+#yazilimsal{
+    color: rgb(255, 255, 255);
+}
+.container-tanitim{
+    background: #D9151D;
+    color: white;
+    font-size: 30px;
+    line-height:70px;
+}
+.col-span-4{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.col-span-6{
+    text-align: center;
+}
+#span-sp3{
+    font-size: 20px;
+}
+#span-sp4{
+    font-size:15px;
+}
+#span-img{
+    margin-top: 50%;
+}
+#span-video{
+    width: 600px;
+    height: 315px;
+    margin-top: 3%;
+}
+/*---------------------Teknik-Servis------------------------*/
+.container-teknik{
+    width: 70%;
+    height: fit-content;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#teknik-img{
+    width: 100%;
+}
+#teknik-head{
+    text-align: center;
+    line-height: 80px;
+}
+#span-teknik{
+    font-size: 30px;
+    text-decoration: underline;
+}
+#span-teknik2{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 2%;
+    font-size: 17px;
+    text-align: center;
+}
+/*------------------Toplu-SMS--------------------*/
+.container-sms{
+    width: 70%;
+    height: fit-content;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#span-sms{
+    font-size: 18px;
+    padding-top: 4%;
+}
+#span-sms a{
+    text-decoration: none;
+    color: #D9151D;
+}
+#span-sms1{
+    font-size: 20px;
+    line-height: 40px;
+    background-color:#D9151D;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+#span-sms2{
+    font-size: 15px;
+}
+#span-sms3{
+    font-size: 20px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.container-sms-sec{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color:#424242;
+    color: white;
+    border-radius: 15px;
+}
+.container-sms-third{
+    width: 100%;
+    height: fit-content;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#span-third-img{
+    width: 50%;
+}
+#span-12{
+    width: 100%;
+    display: flex;
+    padding-top:3%;
+    padding-bottom: 3%;
+}
+#span-8{
+    width: 100%;
+    padding:3%;
+}
+#span-sms4{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2%;
+}
+#span-sms5{
+    font-size: 15px;
+    text-align: center;
+}
+#span-sms6{
+    font-size: 30px;
+    text-decoration: overline;
+    line-height:50px;
+}
+#colheader2{
+    text-align: center;
+    padding-top: 5%;
+}
+.container-fourth{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding:3%;
+
+}
+
+#span-fourth-img{
+    width: 80%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+
+
+
+@media screen and (min-width:540px) and (max-width:1243px){
+    .container-home{
+        display: flex;
+        flex-direction: column;
+    }
+    #span-img{
+        width: 30%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #span-video{
+        width: 600px;
+        height: 315px;
+        margin-top: 2%;
+    }
+
+    .container-sms-sec{
+        flex-direction: column;
+    }
+    #span-third-img{
+        display: none;
+    }
+    .container-fourth{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:414px) and (max-width:540px){
+    .container-home{
+        display: flex;
+        flex-direction: column;
+    }
+    #span-img{
+        width: 50%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #span-video{
+        width: auto;
+        height: 315px;
+        margin-top: 2%;
+    }
+    .container-sms-sec{
+        flex-direction: column;
+    }
+    #span-third-img{
+        display: none;
+    }
+    .container-fourth{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:414px){
+    #span-id{
+        font-size: 20px;
+        text-decoration: overline;
+    }
+    #colheadsec{
+        text-align: left;
+        line-height: 30px;
+    }
+
+    #span-id2{
+        font-size: 20px;
+    }
+    .container-home{
+        display: flex;
+        flex-direction: column;
+    }
+    #span-img{
+        width: 70%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #span-video{
+        width: 315px;
+        height: 315px;
+        margin-top: 1%;
+    }
+    .container-sms-sec{
+        flex-direction: column;
+    }
+    #span-third-img{
+        display: none;
+    }
+    .container-fourth{
+        flex-direction: column;
+    }
+}
