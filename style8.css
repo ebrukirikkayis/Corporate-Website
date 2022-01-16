@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cont-bayi{
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+    height: 100vh;
+}
+h2{
+    color: #D9151D;
+}
+h3{
+    color: #D9151D;
+}
+h4{
+    color: rgb(73, 73, 73);
+}
+h5{
+    color: rgb(112, 112, 112);
+}
+.firma{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    border: 1px solid #d4d4d4;
+}
+
+.col-fir{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 1%;
+}
